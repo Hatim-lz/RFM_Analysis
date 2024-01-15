@@ -22,7 +22,7 @@ The final result of this query is a temporary table named #rfm that contains inf
 * rfm_recency represents the Recency quartile (1 to 4).
 * rfm_frequency represents the Frequency quartile (1 to 4).
 * rfm_monetary represents the MonetaryValue quartile (1 to 4).
-* 
+  
 ![Example](Images/01.png)
 
 - **rfm_cell**: 
