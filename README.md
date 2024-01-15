@@ -18,18 +18,19 @@ Three key metrics:
 # Decoding the RFM Analysis Process  
 The final result of this query is a temporary table named #rfm that contains information about each customer's RFM scores and other relevant details.
 
-- **How Quartiles Work :**  
-Quartiles are a statistical tool that divides a dataset into four equal parts. In the context of RFM analysis:
+**How Quartiles Work ?** Quartiles are a statistical tool that divides a dataset into four equal parts. In the context of RFM analysis:
 * rfm_recency represents the Recency quartile (1 to 4).
 * rfm_frequency represents the Frequency quartile (1 to 4).
-* rfm_monetary represents the MonetaryValue quartile (1 to 4). 
+* rfm_monetary represents the MonetaryValue quartile (1 to 4).
+* 
 ![Example](Images/01.png)
 
-- ** rfm_cell**: 
+- **rfm_cell**: 
 The composite RFM score for each customer is calculated by adding up their quartile scores for Recency, Frequency, and MonetaryValue. This provides a single numerical value that summarizes the customer's behavior across these three dimensions.
 
 - **rfm_cell_string**: 
-The string representation is created by concatenating the individual quartile values for Recency, Frequency, and MonetaryValue. 
+The string representation is created by concatenating the individual quartile values for Recency, Frequency, and MonetaryValue.
+
 ![Example](Images/02.png)
 
 
@@ -40,6 +41,7 @@ Finally The customers are categorized into the following segments:
 - **Potential Churners:** Customers showing signs of potential churn.
 - **Active:** Customers buying often and recently at low price points.
 - **Loyal:** Consistently high RFM scores.
+  
 ![Example](Images/03.png)
 
 
